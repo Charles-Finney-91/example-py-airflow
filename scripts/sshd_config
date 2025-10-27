@@ -1,0 +1,5 @@
+PermitRootLogin yes
+PasswordAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile /root/.ssh/authorized_keys
+HostKey /etc/ssh/ssh_host_rsa_key

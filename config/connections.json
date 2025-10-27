@@ -1,0 +1,32 @@
+{
+  "mongo_default": {
+    "conn_type": "mongo",
+    "description": "local test db",
+    "login": null,
+    "password": null,
+    "host": "host.docker.internal",
+    "port": 27017,
+    "schema": "testdb",
+    "extra": "{\"srv\": null, \"ssl\": false, \"allow_insecure\": null}"
+  },
+  "rest-book-status-updater": {
+    "conn_type": "http",
+    "description": "local rest-book-status-updater",
+    "login": null,
+    "password": null,
+    "host": "host.docker.internal",
+    "port": 8082,
+    "schema": null,
+    "extra": null
+  },
+  "ssh_with_ssl": {
+    "conn_type": "ssh",
+    "description": "ssh_with_ssl",
+    "login": null,
+    "password": null,
+    "host": "host.docker.internal",
+    "port": 2221,
+    "schema": null,
+    "extra": "{\n  \"key_file\": \"/opt/airflow/ssh-keys/ssh_host_rsa_key\"\n}"
+  }
+}

@@ -1,0 +1,10 @@
+services:
+  ssh-server-without-ssl:
+    image: rastasheep/ubuntu-sshd:18.04
+    container_name: ssh-server-without-ssl
+    ports:
+      - "2222:22"
+    environment:
+      - ROOT_PASSWORD=root
+    volumes:
+      - ./scripts:/scripts

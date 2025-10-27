@@ -1,0 +1,14 @@
+services:
+  ssh-server-with-ssl:
+    image: rastasheep/ubuntu-sshd:18.04
+    container_name: ssh-server-with-ssl
+    ports:
+      - "2223:22"
+    environment:
+      - ROOT_PASSWORD=root
+    volumes:
+      - ./scripts:/scripts
+      - ./ssh-keys/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key
+      - ./ssh-keys/ssh_host_rsa_key.pub:/etc/ssh/ssh_host_rsa_key.pub
+      - ./scripts/authorized_keys:/root/.ssh/authorized_keys
+      - ./scripts/sshd_config:/etc/ssh/ssh_config

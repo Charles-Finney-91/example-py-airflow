@@ -1,0 +1,73 @@
+Apache Airflow Notes:
+
++-------------------------+
+| What is apache airflow? |
++-------------------------+
+
+Apache Airflow is like a super-organized personal assistant for your data workflows. 
+Imagine you have a bunch of tasks (like downloading data, processing it, and saving results) that need to happen in a specific order. 
+Airflow helps you define these tasks, schedule when they should run, and make sure they happen in the right sequence.
+It’s like setting up a to-do list for your data, but with automation. 
+You can also monitor everything, retry tasks if they fail, and even connect to different tools or systems. 
+It’s perfect for managing complex workflows without having to babysit them all the time.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
++------------------------------------------------+
+| How airflow achieves a workflow like operation |
++------------------------------------------------+
+
+Apache Airflow achieves task orchestration and workflow management by using the following components,
+1. DAGs (Directed Acyclic Graphs): A DAG is a blueprint that defines the tasks and their dependencies. It tells Airflow what to do and in what order.
+2. Tasks: Each step in your workflow is a task. Tasks can be anything, like running a Python script, querying a database, or triggering an API.
+3. Scheduler: The scheduler is like a timekeeper. It looks at your DAGs, figures out when tasks need to run, and sends them to the executor.
+4. Executor: The executor is responsible for running your tasks. It can run tasks locally, on a cluster, or in the cloud, depending on your setup.
+5. Metadata Database: Airflow uses a database to keep track of everything—like which tasks have run, their statuses, and the results of XComs (data shared between tasks).
+6. Web Interface: The web UI is your control panel. You can monitor workflows, check logs, trigger tasks manually, and see the status of everything.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
++---------------+
+| What is a DAG |
++---------------+
+
+A DAG (Directed Acyclic Graph) in Apache Airflow is like a recipe for a workflow. 
+Imagine you’re baking a cake, and you have a list of steps, mix ingredients, bake the cake, and then decorate it. 
+Each step depends on the previous one being completed. 
+You can’t decorate the cake before it’s baked, right?
+In Airflow, a DAG is a way to define these steps (tasks) and their order (dependencies). 
+It ensures that tasks are executed in the correct sequence and never go in circles (that’s the "acyclic" part). 
+Think of it as a flowchart for your workflow, where each box is a task, and the arrows show the order they run in.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
++------------------------------------------------------+
+| What can we not do using a DAG and their work-arounds|
++------------------------------------------------------+
+
+1. Sharing Data Between DAGs: You can't directly share data between two different DAGs. Each DAG is independent.
+2. Circular Dependencies: Tasks in a DAG can't depend on each other in a loop. For example, Task A can't depend on Task B, and Task B can't depend back on Task A.
+3. Dynamic Task Execution After DAG Run Starts: You can't add or remove tasks dynamically once a DAG run has started. The structure of the DAG is fixed when it is defined.
+4. Real-Time Execution: Airflow is not designed for real-time or event-driven workflows. It works best for scheduled or batch processing.
+5. Long-Term Data Storage: Airflow is not a database. It’s not meant to store large amounts of data or act as a data warehouse.
+6. Complex Data Transformations: While you can run scripts or tasks, Airflow itself doesn’t process or transform data. You need external tools or scripts for that.
+7. Parallel Execution Without Dependencies: Tasks that depend on each other can't run at the same time. Dependencies must be respected.
+8. Interactive User Input: DAGs can't pause and wait for user input during execution. They are fully automated.
+9. Infinite Loops: You can't create workflows that run forever. DAGs are designed to complete their tasks and stop.
+10. Direct External System Integration: Airflow doesn’t directly integrate with external systems like message queues or APIs. You need operators or plugins for that.
+
+## Workarounds
+
+### Sharing Data Between DAGs
+1. External Storage: Use a shared external storage system like:
+	a. Databases: Store shared data in a database that both DAGs can access.
+	b. Object Storage: Use systems like Amazon S3, Google Cloud Storage, or a shared file system to store data and pass references (e.g., file paths) between DAGs.
+2. TriggerDagRunOperator with Parameters: Use the TriggerDagRunOperator to trigger another DAG and pass data as parameters. The triggered DAG can use these parameters to fetch or process the data.
+3. Message Queues: Use a message queue like RabbitMQ or Kafka to pass messages or data between DAGs.
+4. Custom XCom Backends: Implement a custom XCom backend that allows sharing data between DAGs by storing XComs in an external system like a database or object storage.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

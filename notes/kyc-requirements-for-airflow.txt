@@ -1,0 +1,29 @@
+# Requirements:
+
+## Components involved:
+	1. Data Source
+	2. Batch Configuration
+	3. Batch REST service
+
+## How it should work:
+	1. Fetch the batch config from the mongo collection. It contains details about chunking source data and other useful information
+	2. Fetch the source data from mongo collection (this could be mongo or kafka, for simpltcity sake we can have it as mongo for now).
+	3. Chunk the collected source data based on the chunking config from batch config.
+	4. Process each chunk by doing the following,
+		a. Post the first chunk to the REST batch service for processing.
+		b. Invoke a batch process watcher, that loops and looks into a data source to see if all the records in the current chunk is processed.
+		c. If everything is processed, then send the next chunk to the batch service.
+		d. Keep doing this till all the chunks are processed.
+
+## What is the plan using airflow:
+	### What does not work in the current requirements with airflow:
+		1. Airflow uses this block called DAG that wraps different tasks and creates a workflow. DAG means Directed Acyclic Graph, Where Acyclic means the tasks cannot form a loop. For example we can do task1 >> task2 >> task3 but we cannot do task1 >> task2 >> task3 >> task2. We cannot form a loop. One work-around is to split the tasks between two DAGs instead of one and invoke the DAGs as the process proceeds.
+		2. Each DAG runs with their own context, which means there is no data sharing between them directly. We either have to use an externalised shared data source from where the tasks can read data from or parameterize the DAGs and send data through it. The data is carried by the XCOMs which is an internal implementation that holds data. Normally this is can only share data between multiple tasks in one DAG, it does not share data between DAGs. As a work-around we can parameterize both the DAGs and use the data from the XCOM to trigger the DAGs with the parameters instead of sharing data between them.
+		3. There is no in-memory storage for airflow, which means we cannot hold the source data in chunks when the DAGs are running. As a workaround, instead of getting all the data and chunking in code, we will have to introduce a collection which will hold the source data Ids and status. We can query in chunks and then let the watcher check if all the ids in the chunk is processed by using the status attribute in the same collection.
+		
+## What is the current plan?
+	1. create three DAGs
+		a. batch_data_initializer_dag :- this DAG will be responsible for querying the batch_config collection and source data config and preparing the batch_details collection with chunked data for further processing. Once this process is completed, we can trigger the secong DAG batch_data_server_DAG.
+		b. batch_data_server_dag      :- this DAG will query the batch_details collection in chunks where the status is not-processed and sends the data to REST API endpoint. This then hands over the work to the third DAG chunk_process_watcher_dag.
+		c. chunk_process_watcher_dag  :- this DAG will be responsible for watching the batch_details collection with the input Ids and check if all the statuses are changed to processed. Once everything is processed, it will trigger the secong DAG, so that the process will continue again and again till the entire batch is completed.
+		

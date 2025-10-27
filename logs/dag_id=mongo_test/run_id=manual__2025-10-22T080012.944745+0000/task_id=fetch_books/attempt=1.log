@@ -1,0 +1,67 @@
+{"timestamp":"2025-10-22T08:00:14.508164Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-22T08:00:14.511924Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/mongo_test.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-22T08:00:14.906235Z","level":"info","event":"Query result (books): [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.907683Z","level":"info","event":"    {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.908145Z","level":"info","event":"        \"title\": \"Test1\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.908529Z","level":"info","event":"        \"pages\": 300,","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.908904Z","level":"info","event":"        \"author\": \"TestA1\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.909287Z","level":"info","event":"        \"rating\": 10,","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.909557Z","level":"info","event":"        \"genres\": [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.909834Z","level":"info","event":"            \"fantasy\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.910102Z","level":"info","event":"            \"comedy\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.910344Z","level":"info","event":"        ],","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.910629Z","level":"info","event":"        \"reviews\": [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.910920Z","level":"info","event":"            {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.911159Z","level":"info","event":"                \"reviewer\": \"R1\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.911458Z","level":"info","event":"                \"comment\": \"Good Book\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.911736Z","level":"info","event":"            },","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.911997Z","level":"info","event":"            {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.912252Z","level":"info","event":"                \"reviewer\": \"R2\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.912545Z","level":"info","event":"                \"comment\": \"It was ok\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.912953Z","level":"info","event":"            }","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.913266Z","level":"info","event":"        ]","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.913584Z","level":"info","event":"    },","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.913901Z","level":"info","event":"    {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.914162Z","level":"info","event":"        \"title\": \"Test2\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.914440Z","level":"info","event":"        \"pages\": 500,","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.914811Z","level":"info","event":"        \"author\": \"TestA2\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.915235Z","level":"info","event":"        \"rating\": 9,","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.915517Z","level":"info","event":"        \"genres\": [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.915792Z","level":"info","event":"            \"fantasy\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.916065Z","level":"info","event":"            \"sci-fi\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.916391Z","level":"info","event":"        ],","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.916696Z","level":"info","event":"        \"reviews\": [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.917038Z","level":"info","event":"            {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.917339Z","level":"info","event":"                \"reviewer\": \"R4\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.917617Z","level":"info","event":"                \"comment\": \"Good Book\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.917854Z","level":"info","event":"            },","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.918058Z","level":"info","event":"            {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.918316Z","level":"info","event":"                \"reviewer\": \"R3\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.918516Z","level":"info","event":"                \"comment\": \"It was ok\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.918698Z","level":"info","event":"            }","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.918903Z","level":"info","event":"        ]","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.919172Z","level":"info","event":"    },","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.919481Z","level":"info","event":"    {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.919984Z","level":"info","event":"        \"title\": \"Test3\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.920398Z","level":"info","event":"        \"pages\": 550,","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.920702Z","level":"info","event":"        \"author\": \"TestA2\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.920975Z","level":"info","event":"        \"rating\": 7,","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.921250Z","level":"info","event":"        \"genres\": [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.921564Z","level":"info","event":"            \"fantasy\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.921805Z","level":"info","event":"            \"sci-fi\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.922111Z","level":"info","event":"            \"comedy\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.922343Z","level":"info","event":"        ],","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.922617Z","level":"info","event":"        \"reviews\": [","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.922811Z","level":"info","event":"            {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.923091Z","level":"info","event":"                \"reviewer\": \"R4\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.923286Z","level":"info","event":"                \"comment\": \"Good Book\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.923488Z","level":"info","event":"            },","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.923714Z","level":"info","event":"            {","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.923939Z","level":"info","event":"                \"reviewer\": \"R2\",","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.924143Z","level":"info","event":"                \"comment\": \"It was ok\"","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.924343Z","level":"info","event":"            }","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.924627Z","level":"info","event":"        ]","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.924828Z","level":"info","event":"    }","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.925126Z","level":"info","event":"]","logger":"task.stdout"}
+{"timestamp":"2025-10-22T08:00:14.911310Z","level":"info","event":"Done. Returned value was: [\n    {\n        \"title\": \"Test1\",\n        \"pages\": 300,\n        \"author\": \"TestA1\",\n        \"rating\": 10,\n        \"genres\": [\n            \"fantasy\",\n            \"comedy\"\n        ],\n        \"reviews\": [\n            {\n                \"reviewer\": \"R1\",\n                \"comment\": \"Good Book\"\n            },\n            {\n                \"reviewer\": \"R2\",\n                \"comment\": \"It was ok\"\n            }\n        ]\n    },\n    {\n        \"title\": \"Test2\",\n        \"pages\": 500,\n        \"author\": \"TestA2\",\n        \"rating\": 9,\n        \"genres\": [\n            \"fantasy\",\n            \"sci-fi\"\n        ],\n        \"reviews\": [\n            {\n                \"reviewer\": \"R4\",\n                \"comment\": \"Good Book\"\n            },\n            {\n                \"reviewer\": \"R3\",\n                \"comment\": \"It was ok\"\n            }\n        ]\n    },\n    {\n        \"title\": \"Test3\",\n        \"pages\": 550,\n        \"author\": \"TestA2\",\n        \"rating\": 7,\n        \"genres\": [\n            \"fantasy\",\n            \"sci-fi\",\n            \"comedy\"\n        ],\n        \"reviews\": [\n            {\n                \"reviewer\": \"R4\",\n                \"comment\": \"Good Book\"\n            },\n            {\n                \"reviewer\": \"R2\",\n                \"comment\": \"It was ok\"\n            }\n        ]\n    }\n]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-22T08:00:14.911662Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019a0aee-caae-7d64-9436-972a9707df7e'), task_id='fetch_books', dag_id='mongo_test', run_id='manual__2025-10-22T08:00:12.944745+00:00', try_number=1, dag_version_id=UUID('019a0ad4-fe7d-7080-b0f3-c2959c446070'), map_index=-1, hostname='ae023432148f', context_carrier={}, task=<Task(PythonOperator): fetch_books>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 10, 22, 8, 0, 13, 928111, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

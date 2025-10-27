@@ -1,0 +1,15 @@
+{"timestamp":"2025-10-27T06:02:33.091160Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-27T06:02:33.092086Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/mongo_book_store_test.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-27T06:02:33.245770Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/mongo_book_store_test.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T06:02:33.389334Z","level":"info","event":"Book ID: book-1","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.389736Z","level":"info","event":"Book ID: book-2","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.389987Z","level":"info","event":"Book ID: book-3","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.390234Z","level":"info","event":"Book ID: book-4","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.390458Z","level":"info","event":"Book ID: book-5","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.390694Z","level":"info","event":"Book ID: book-6","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.390934Z","level":"info","event":"Book ID: book-7","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.391139Z","level":"info","event":"Book ID: book-8","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.391331Z","level":"info","event":"Book ID: book-9","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.391515Z","level":"info","event":"Book ID: book-10","logger":"task.stdout"}
+{"timestamp":"2025-10-27T06:02:33.389528Z","level":"info","event":"Done. Returned value was: ['book-1', 'book-2', 'book-3', 'book-4', 'book-5', 'book-6', 'book-7', 'book-8', 'book-9', 'book-10']","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-27T06:02:33.389875Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019a2442-d269-7aa0-aa26-0be9ef087f12'), task_id='fetch_books', dag_id='mongo_book_store_test', run_id='manual__2025-10-27T06:02:30.358436+00:00', try_number=1, dag_version_id=UUID('019a243f-b1b9-77e0-a351-677259698bd4'), map_index=-1, hostname='fa7e883d7e79', context_carrier={}, task=<Task(PythonOperator): fetch_books>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 27, 6, 2, 31, 226028, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

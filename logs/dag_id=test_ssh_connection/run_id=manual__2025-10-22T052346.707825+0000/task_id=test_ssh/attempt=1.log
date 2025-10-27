@@ -1,0 +1,8 @@
+{"timestamp":"2025-10-22T05:23:49.027962Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-22T05:23:49.032003Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test_ssh_connection.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-22T05:23:49.443067Z","level":"info","event":"ssh_hook is not provided or invalid. Trying ssh_conn_id to create SSHHook.","logger":"airflow.task.operators.airflow.providers.ssh.operators.ssh.SSHOperator","filename":"ssh.py","lineno":123}
+{"timestamp":"2025-10-22T05:23:49.474164Z","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.ssh.hooks.ssh.SSHHook","filename":"ssh.py","lineno":287}
+{"timestamp":"2025-10-22T05:23:49.604664Z","level":"info","event":"Connected (version 2.0, client OpenSSH_7.6p1)","logger":"paramiko.transport","filename":"transport.py","lineno":1944}
+{"timestamp":"2025-10-22T05:23:49.738157Z","level":"info","event":"Authentication (publickey) failed.","logger":"paramiko.transport","filename":"transport.py","lineno":1944}
+{"timestamp":"2025-10-22T05:23:49.755717Z","level":"info","event":"Authentication (keyboard-interactive) failed.","logger":"paramiko.transport","filename":"transport.py","lineno":1944}
+{"timestamp":"2025-10-22T05:23:49.757622Z","level":"info","event":"Failed to connect. Sleeping before retry attempt 1","logger":"airflow.task.hooks.airflow.providers.ssh.hooks.ssh.SSHHook","filename":"ssh.py","lineno":330}
