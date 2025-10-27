@@ -1,0 +1,20 @@
+{"timestamp":"2025-10-27T15:01:23.600748Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-27T15:01:23.601943Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/book_batch_processor_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-27T15:01:23.796708Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T15:01:23.797039Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T15:01:23.985608Z","level":"info","event":"Batch size configured: 10","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:23.999907Z","level":"info","event":"Total unread books: 60","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.000572Z","level":"info","event":"Total chunks created: 6","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.001072Z","level":"info","event":"Base URL from connection:","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.001383Z","level":"info","event":"Resolved URL: /api/books/update-status","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.001649Z","level":"info","event":"Sending update request for chunk 1/6: ['book-41', 'book-42', 'book-43', 'book-44', 'book-45', 'book-46', 'book-47', 'book-48', 'book-49', 'book-50']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.001929Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.002248Z","level":"info","event":"Processing chunk 1/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:24.043856Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:29.066140Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:34.062508Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:39.068175Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:44.076471Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:44.091192Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-27T15:01:49.080415Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T15:01:49.115582Z","level":"error","event":"Task killed!","logger":"task"}

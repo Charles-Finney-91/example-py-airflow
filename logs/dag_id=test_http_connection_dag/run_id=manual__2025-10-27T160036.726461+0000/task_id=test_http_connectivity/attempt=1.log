@@ -1,0 +1,6 @@
+{"timestamp":"2025-10-27T16:00:37.852636Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-27T16:00:37.860802Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test_http_connection_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-27T16:00:37.976572Z","level":"info","event":"[INFO] Testing HTTP connection to: http://host.docker.internal:8082/","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:00:38.093046Z","level":"info","event":"[INFO] HTTP response status: 404","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:00:38.093761Z","level":"info","event":"[INFO] Response body (first 200 chars): {\"timestamp\":\"2025-10-27T16:00:38.093+00:00\",\"status\":404,\"error\":\"Not Found\",\"path\":\"/\"}","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:00:38.093493Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}

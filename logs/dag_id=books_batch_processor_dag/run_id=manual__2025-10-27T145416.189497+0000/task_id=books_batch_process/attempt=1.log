@@ -1,0 +1,29 @@
+{"timestamp":"2025-10-27T14:54:19.244307Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-27T14:54:19.251039Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/book_batch_processor_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-27T14:54:19.718956Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T14:54:19.719194Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T14:54:20.054435Z","level":"info","event":"Batch size configured: 10","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:20.066975Z","level":"info","event":"Total unread books: 60","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:20.067366Z","level":"info","event":"Total chunks created: 6","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:20.072438Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:20.072883Z","level":"info","event":"Processing chunk 1/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:20.137689Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:25.162321Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:30.154154Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:35.158654Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:40.162472Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:45.210646Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:50.245146Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:54:55.389060Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:00.390473Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:05.394373Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:10.382040Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:15.386499Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:22.690578Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:25.735495Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:30.745595Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:35.898806Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:40.984642Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:46.117949Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:51.148170Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T14:55:56.331000Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}

@@ -1,0 +1,59 @@
+{"timestamp":"2025-10-27T16:03:52.904980Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-27T16:03:52.907858Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/book_batch_processor_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-27T16:03:54.763129Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T16:03:54.763380Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-27T16:03:55.304138Z","level":"info","event":"Batch size configured: 10","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.353853Z","level":"info","event":"Total unread books: 60","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.354388Z","level":"info","event":"Total chunks created: 6","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.373829Z","level":"info","event":"[INFO] Testing HTTP connection to: http://host.docker.internal:8082/api/books/update-status","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.375304Z","level":"info","event":"Sending update request for chunk 1/6: ['book-41', 'book-42', 'book-43', 'book-44', 'book-45', 'book-46', 'book-47', 'book-48', 'book-49', 'book-50']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.376710Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.377518Z","level":"info","event":"Processing chunk 1/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:03:55.583387Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:00.600032Z","level":"info","event":"Chunk progress: 3/10 read (30.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:05.595096Z","level":"info","event":"Chunk progress: 5/10 read (50.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:10.598524Z","level":"info","event":"Chunk progress: 8/10 read (80.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:15.603761Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:15.604116Z","level":"info","event":"Sending update request for chunk 2/6: ['book-51', 'book-52', 'book-53', 'book-54', 'book-55', 'book-56', 'book-57', 'book-58', 'book-59', 'book-60']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:15.604440Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:15.604735Z","level":"info","event":"Processing chunk 2/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:15.619047Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:20.611246Z","level":"info","event":"Chunk progress: 3/10 read (30.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:25.615052Z","level":"info","event":"Chunk progress: 5/10 read (50.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:30.619419Z","level":"info","event":"Chunk progress: 8/10 read (80.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:35.622565Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:35.623091Z","level":"info","event":"Sending update request for chunk 3/6: ['book-61', 'book-62', 'book-63', 'book-64', 'book-65', 'book-66', 'book-67', 'book-68', 'book-69', 'book-70']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:35.623537Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:35.623975Z","level":"info","event":"Processing chunk 3/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:35.638490Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:40.634520Z","level":"info","event":"Chunk progress: 3/10 read (30.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:45.638405Z","level":"info","event":"Chunk progress: 5/10 read (50.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:50.640078Z","level":"info","event":"Chunk progress: 8/10 read (80.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:55.644919Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:55.645389Z","level":"info","event":"Sending update request for chunk 4/6: ['book-71', 'book-72', 'book-73', 'book-74', 'book-75', 'book-76', 'book-77', 'book-78', 'book-79', 'book-80']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:55.645614Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:55.645801Z","level":"info","event":"Processing chunk 4/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:04:55.657602Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:00.654949Z","level":"info","event":"Chunk progress: 3/10 read (30.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:05.658712Z","level":"info","event":"Chunk progress: 5/10 read (50.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:10.664448Z","level":"info","event":"Chunk progress: 8/10 read (80.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:15.668735Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:15.669158Z","level":"info","event":"Sending update request for chunk 5/6: ['book-81', 'book-82', 'book-83', 'book-84', 'book-85', 'book-86', 'book-87', 'book-88', 'book-89', 'book-90']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:15.669432Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:15.669786Z","level":"info","event":"Processing chunk 5/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:15.683605Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:20.676521Z","level":"info","event":"Chunk progress: 3/10 read (30.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:25.682423Z","level":"info","event":"Chunk progress: 5/10 read (50.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:30.694577Z","level":"info","event":"Chunk progress: 8/10 read (80.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:35.698469Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:35.698987Z","level":"info","event":"Sending update request for chunk 6/6: ['book-91', 'book-92', 'book-93', 'book-94', 'book-95', 'book-96', 'book-97', 'book-98', 'book-99', 'book-100']","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:35.699310Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:35.699824Z","level":"info","event":"Processing chunk 6/6 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:35.716427Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:40.710114Z","level":"info","event":"Chunk progress: 3/10 read (30.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:45.716401Z","level":"info","event":"Chunk progress: 5/10 read (50.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:50.886048Z","level":"info","event":"Chunk progress: 8/10 read (80.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:55.738543Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:55.738957Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:55.739234Z","level":"info","event":"✅ All chunks processed successfully.","logger":"task.stdout"}
+{"timestamp":"2025-10-27T16:05:55.742567Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
