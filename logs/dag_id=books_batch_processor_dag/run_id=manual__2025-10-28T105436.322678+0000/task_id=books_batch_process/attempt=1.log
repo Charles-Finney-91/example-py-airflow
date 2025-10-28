@@ -1,0 +1,511 @@
+{"timestamp":"2025-10-28T10:54:44.867104Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-28T10:54:44.876813Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/book_batch_processor_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-28T10:54:55.271457Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-28T10:54:55.271703Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/book_batch_processor_dag.py","lineno":1,"logger":"py.warnings"}
+{"timestamp":"2025-10-28T10:54:55.659508Z","level":"info","event":"Batch size configured: 10","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.686019Z","level":"info","event":"Total unread books: 1000","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.686585Z","level":"info","event":"Total chunks created: 100","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.697569Z","level":"info","event":"[INFO] Testing HTTP connection to: http://host.docker.internal:8082/api/books/update-status","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.698221Z","level":"info","event":"Sending update request for chunk 1/100: ['book-1', 'book-2', 'book-3', 'book-4', 'book-5', 'book-6', 'book-7', 'book-8', 'book-9', 'book-10']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.698809Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.699337Z","level":"info","event":"Processing chunk 1/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:54:55.786724Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:00.791967Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:00.792417Z","level":"info","event":"Sending update request for chunk 2/100: ['book-11', 'book-12', 'book-13', 'book-14', 'book-15', 'book-16', 'book-17', 'book-18', 'book-19', 'book-20']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:00.792780Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:00.793040Z","level":"info","event":"Processing chunk 2/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:00.808953Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:05.849258Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:05.850397Z","level":"info","event":"Sending update request for chunk 3/100: ['book-21', 'book-22', 'book-23', 'book-24', 'book-25', 'book-26', 'book-27', 'book-28', 'book-29', 'book-30']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:05.850846Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:05.851207Z","level":"info","event":"Processing chunk 3/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:05.860281Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:10.864786Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:10.865195Z","level":"info","event":"Sending update request for chunk 4/100: ['book-31', 'book-32', 'book-33', 'book-34', 'book-35', 'book-36', 'book-37', 'book-38', 'book-39', 'book-40']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:10.865482Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:10.865735Z","level":"info","event":"Processing chunk 4/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:10.880369Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:15.878176Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:15.878767Z","level":"info","event":"Sending update request for chunk 5/100: ['book-41', 'book-42', 'book-43', 'book-44', 'book-45', 'book-46', 'book-47', 'book-48', 'book-49', 'book-50']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:15.879489Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:15.879916Z","level":"info","event":"Processing chunk 5/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:15.973724Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:20.938450Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:20.939109Z","level":"info","event":"Sending update request for chunk 6/100: ['book-51', 'book-52', 'book-53', 'book-54', 'book-55', 'book-56', 'book-57', 'book-58', 'book-59', 'book-60']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:20.939391Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:20.939668Z","level":"info","event":"Processing chunk 6/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:20.955530Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:25.949866Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:25.950179Z","level":"info","event":"Sending update request for chunk 7/100: ['book-61', 'book-62', 'book-63', 'book-64', 'book-65', 'book-66', 'book-67', 'book-68', 'book-69', 'book-70']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:25.950371Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:25.950532Z","level":"info","event":"Processing chunk 7/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:26.059571Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:30.954945Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:30.955241Z","level":"info","event":"Sending update request for chunk 8/100: ['book-71', 'book-72', 'book-73', 'book-74', 'book-75', 'book-76', 'book-77', 'book-78', 'book-79', 'book-80']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:30.955432Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:30.955598Z","level":"info","event":"Processing chunk 8/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:30.969794Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:35.967776Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:35.968339Z","level":"info","event":"Sending update request for chunk 9/100: ['book-81', 'book-82', 'book-83', 'book-84', 'book-85', 'book-86', 'book-87', 'book-88', 'book-89', 'book-90']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:35.969062Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:35.973532Z","level":"info","event":"Processing chunk 9/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:36.003323Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:40.990497Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:40.991044Z","level":"info","event":"Sending update request for chunk 10/100: ['book-91', 'book-92', 'book-93', 'book-94', 'book-95', 'book-96', 'book-97', 'book-98', 'book-99', 'book-100']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:40.991431Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:40.991765Z","level":"info","event":"Processing chunk 10/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:41.014051Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:46.000996Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:46.002514Z","level":"info","event":"Sending update request for chunk 11/100: ['book-101', 'book-102', 'book-103', 'book-104', 'book-105', 'book-106', 'book-107', 'book-108', 'book-109', 'book-110']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:46.003295Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:46.003653Z","level":"info","event":"Processing chunk 11/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:46.016969Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:51.011385Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:51.012009Z","level":"info","event":"Sending update request for chunk 12/100: ['book-111', 'book-112', 'book-113', 'book-114', 'book-115', 'book-116', 'book-117', 'book-118', 'book-119', 'book-120']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:51.012391Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:51.012712Z","level":"info","event":"Processing chunk 12/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:51.030479Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:56.169998Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:56.172981Z","level":"info","event":"Sending update request for chunk 13/100: ['book-121', 'book-122', 'book-123', 'book-124', 'book-125', 'book-126', 'book-127', 'book-128', 'book-129', 'book-130']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:56.173500Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:56.173906Z","level":"info","event":"Processing chunk 13/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:55:56.177290Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:01.282042Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:01.282524Z","level":"info","event":"Sending update request for chunk 14/100: ['book-131', 'book-132', 'book-133', 'book-134', 'book-135', 'book-136', 'book-137', 'book-138', 'book-139', 'book-140']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:01.282890Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:01.283149Z","level":"info","event":"Processing chunk 14/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:01.288639Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:06.292625Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:06.293025Z","level":"info","event":"Sending update request for chunk 15/100: ['book-141', 'book-142', 'book-143', 'book-144', 'book-145', 'book-146', 'book-147', 'book-148', 'book-149', 'book-150']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:06.293492Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:06.293802Z","level":"info","event":"Processing chunk 15/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:06.313180Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:11.305597Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:11.305928Z","level":"info","event":"Sending update request for chunk 16/100: ['book-151', 'book-152', 'book-153', 'book-154', 'book-155', 'book-156', 'book-157', 'book-158', 'book-159', 'book-160']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:11.306175Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:11.306414Z","level":"info","event":"Processing chunk 16/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:11.320244Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:16.318244Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:16.318782Z","level":"info","event":"Sending update request for chunk 17/100: ['book-161', 'book-162', 'book-163', 'book-164', 'book-165', 'book-166', 'book-167', 'book-168', 'book-169', 'book-170']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:16.319076Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:16.319326Z","level":"info","event":"Processing chunk 17/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:16.336446Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:21.328713Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:21.329541Z","level":"info","event":"Sending update request for chunk 18/100: ['book-171', 'book-172', 'book-173', 'book-174', 'book-175', 'book-176', 'book-177', 'book-178', 'book-179', 'book-180']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:21.329834Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:21.330103Z","level":"info","event":"Processing chunk 18/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:21.344112Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:26.333206Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:26.333661Z","level":"info","event":"Sending update request for chunk 19/100: ['book-181', 'book-182', 'book-183', 'book-184', 'book-185', 'book-186', 'book-187', 'book-188', 'book-189', 'book-190']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:26.333996Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:26.334553Z","level":"info","event":"Processing chunk 19/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:26.353545Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:31.343631Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:31.344137Z","level":"info","event":"Sending update request for chunk 20/100: ['book-191', 'book-192', 'book-193', 'book-194', 'book-195', 'book-196', 'book-197', 'book-198', 'book-199', 'book-200']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:31.344497Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:31.344832Z","level":"info","event":"Processing chunk 20/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:31.365484Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:36.433376Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:36.434054Z","level":"info","event":"Sending update request for chunk 21/100: ['book-201', 'book-202', 'book-203', 'book-204', 'book-205', 'book-206', 'book-207', 'book-208', 'book-209', 'book-210']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:36.437813Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:36.438883Z","level":"info","event":"Processing chunk 21/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:36.439779Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:41.426062Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:41.426445Z","level":"info","event":"Sending update request for chunk 22/100: ['book-211', 'book-212', 'book-213', 'book-214', 'book-215', 'book-216', 'book-217', 'book-218', 'book-219', 'book-220']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:41.426681Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:41.426927Z","level":"info","event":"Processing chunk 22/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:41.440440Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:46.435017Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:46.435618Z","level":"info","event":"Sending update request for chunk 23/100: ['book-221', 'book-222', 'book-223', 'book-224', 'book-225', 'book-226', 'book-227', 'book-228', 'book-229', 'book-230']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:46.436096Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:46.438549Z","level":"info","event":"Processing chunk 23/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:46.462816Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:51.447241Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:51.447798Z","level":"info","event":"Sending update request for chunk 24/100: ['book-231', 'book-232', 'book-233', 'book-234', 'book-235', 'book-236', 'book-237', 'book-238', 'book-239', 'book-240']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:51.448103Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:51.448480Z","level":"info","event":"Processing chunk 24/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:51.461989Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:56.451435Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:56.451784Z","level":"info","event":"Sending update request for chunk 25/100: ['book-241', 'book-242', 'book-243', 'book-244', 'book-245', 'book-246', 'book-247', 'book-248', 'book-249', 'book-250']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:56.452078Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:56.452337Z","level":"info","event":"Processing chunk 25/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:56:56.465754Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:01.460485Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:01.461044Z","level":"info","event":"Sending update request for chunk 26/100: ['book-251', 'book-252', 'book-253', 'book-254', 'book-255', 'book-256', 'book-257', 'book-258', 'book-259', 'book-260']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:01.461327Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:01.461604Z","level":"info","event":"Processing chunk 26/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:01.476140Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:06.469128Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:06.469502Z","level":"info","event":"Sending update request for chunk 27/100: ['book-261', 'book-262', 'book-263', 'book-264', 'book-265', 'book-266', 'book-267', 'book-268', 'book-269', 'book-270']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:06.469783Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:06.470035Z","level":"info","event":"Processing chunk 27/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:06.486360Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:11.593306Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:11.595186Z","level":"info","event":"Sending update request for chunk 28/100: ['book-271', 'book-272', 'book-273', 'book-274', 'book-275', 'book-276', 'book-277', 'book-278', 'book-279', 'book-280']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:11.596041Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:11.596507Z","level":"info","event":"Processing chunk 28/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:11.603720Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:16.607390Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:16.607917Z","level":"info","event":"Sending update request for chunk 29/100: ['book-281', 'book-282', 'book-283', 'book-284', 'book-285', 'book-286', 'book-287', 'book-288', 'book-289', 'book-290']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:16.608453Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:16.609980Z","level":"info","event":"Processing chunk 29/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:16.632379Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:21.621840Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:21.622226Z","level":"info","event":"Sending update request for chunk 30/100: ['book-291', 'book-292', 'book-293', 'book-294', 'book-295', 'book-296', 'book-297', 'book-298', 'book-299', 'book-300']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:21.622864Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:21.623095Z","level":"info","event":"Processing chunk 30/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:21.636253Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:26.624214Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:26.624572Z","level":"info","event":"Sending update request for chunk 31/100: ['book-301', 'book-302', 'book-303', 'book-304', 'book-305', 'book-306', 'book-307', 'book-308', 'book-309', 'book-310']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:26.624789Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:26.624961Z","level":"info","event":"Processing chunk 31/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:26.637599Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:31.631935Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:31.632276Z","level":"info","event":"Sending update request for chunk 32/100: ['book-311', 'book-312', 'book-313', 'book-314', 'book-315', 'book-316', 'book-317', 'book-318', 'book-319', 'book-320']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:31.632521Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:31.632766Z","level":"info","event":"Processing chunk 32/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:31.643605Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:36.639418Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:36.639774Z","level":"info","event":"Sending update request for chunk 33/100: ['book-321', 'book-322', 'book-323', 'book-324', 'book-325', 'book-326', 'book-327', 'book-328', 'book-329', 'book-330']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:36.640039Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:36.640243Z","level":"info","event":"Processing chunk 33/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:36.651850Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:41.649649Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:41.650128Z","level":"info","event":"Sending update request for chunk 34/100: ['book-331', 'book-332', 'book-333', 'book-334', 'book-335', 'book-336', 'book-337', 'book-338', 'book-339', 'book-340']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:41.650440Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:41.650727Z","level":"info","event":"Processing chunk 34/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:41.671538Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:46.663192Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:46.663853Z","level":"info","event":"Sending update request for chunk 35/100: ['book-341', 'book-342', 'book-343', 'book-344', 'book-345', 'book-346', 'book-347', 'book-348', 'book-349', 'book-350']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:46.664242Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:46.664819Z","level":"info","event":"Processing chunk 35/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:46.691339Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:51.750752Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:51.752106Z","level":"info","event":"Sending update request for chunk 36/100: ['book-351', 'book-352', 'book-353', 'book-354', 'book-355', 'book-356', 'book-357', 'book-358', 'book-359', 'book-360']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:51.752728Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:51.753094Z","level":"info","event":"Processing chunk 36/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:51.755238Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:56.755890Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:56.756469Z","level":"info","event":"Sending update request for chunk 37/100: ['book-361', 'book-362', 'book-363', 'book-364', 'book-365', 'book-366', 'book-367', 'book-368', 'book-369', 'book-370']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:56.756727Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:56.757020Z","level":"info","event":"Processing chunk 37/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:57:56.776324Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:01.766687Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:01.767103Z","level":"info","event":"Sending update request for chunk 38/100: ['book-371', 'book-372', 'book-373', 'book-374', 'book-375', 'book-376', 'book-377', 'book-378', 'book-379', 'book-380']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:01.767411Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:01.767718Z","level":"info","event":"Processing chunk 38/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:01.897350Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:06.779218Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:06.779903Z","level":"info","event":"Sending update request for chunk 39/100: ['book-381', 'book-382', 'book-383', 'book-384', 'book-385', 'book-386', 'book-387', 'book-388', 'book-389', 'book-390']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:06.780418Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:06.780838Z","level":"info","event":"Processing chunk 39/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:06.809036Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:11.799921Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:11.800749Z","level":"info","event":"Sending update request for chunk 40/100: ['book-391', 'book-392', 'book-393', 'book-394', 'book-395', 'book-396', 'book-397', 'book-398', 'book-399', 'book-400']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:11.801139Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:11.801427Z","level":"info","event":"Processing chunk 40/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:11.817060Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:16.809613Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:16.810164Z","level":"info","event":"Sending update request for chunk 41/100: ['book-401', 'book-402', 'book-403', 'book-404', 'book-405', 'book-406', 'book-407', 'book-408', 'book-409', 'book-410']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:16.810607Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:16.810850Z","level":"info","event":"Processing chunk 41/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:16.826750Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:21.821416Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:21.821776Z","level":"info","event":"Sending update request for chunk 42/100: ['book-411', 'book-412', 'book-413', 'book-414', 'book-415', 'book-416', 'book-417', 'book-418', 'book-419', 'book-420']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:21.822082Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:21.822333Z","level":"info","event":"Processing chunk 42/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:21.842284Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:26.982004Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:26.984333Z","level":"info","event":"Sending update request for chunk 43/100: ['book-421', 'book-422', 'book-423', 'book-424', 'book-425', 'book-426', 'book-427', 'book-428', 'book-429', 'book-430']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:26.984810Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:26.985195Z","level":"info","event":"Processing chunk 43/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:26.988375Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:32.135836Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:32.137392Z","level":"info","event":"Sending update request for chunk 44/100: ['book-431', 'book-432', 'book-433', 'book-434', 'book-435', 'book-436', 'book-437', 'book-438', 'book-439', 'book-440']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:32.137651Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:32.137883Z","level":"info","event":"Processing chunk 44/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:32.142797Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:37.160295Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:37.160928Z","level":"info","event":"Sending update request for chunk 45/100: ['book-441', 'book-442', 'book-443', 'book-444', 'book-445', 'book-446', 'book-447', 'book-448', 'book-449', 'book-450']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:37.161320Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:37.161612Z","level":"info","event":"Processing chunk 45/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:37.161865Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:42.157685Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:42.194138Z","level":"info","event":"Sending update request for chunk 46/100: ['book-451', 'book-452', 'book-453', 'book-454', 'book-455', 'book-456', 'book-457', 'book-458', 'book-459', 'book-460']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:42.194650Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:42.195152Z","level":"info","event":"Processing chunk 46/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:42.195729Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:47.166932Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:47.192767Z","level":"info","event":"Sending update request for chunk 47/100: ['book-461', 'book-462', 'book-463', 'book-464', 'book-465', 'book-466', 'book-467', 'book-468', 'book-469', 'book-470']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:47.193255Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:47.193611Z","level":"info","event":"Processing chunk 47/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:47.193893Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:52.175364Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:52.191075Z","level":"info","event":"Sending update request for chunk 48/100: ['book-471', 'book-472', 'book-473', 'book-474', 'book-475', 'book-476', 'book-477', 'book-478', 'book-479', 'book-480']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:52.191874Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:52.192226Z","level":"info","event":"Processing chunk 48/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:52.192534Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:57.184059Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:57.184755Z","level":"info","event":"Sending update request for chunk 49/100: ['book-481', 'book-482', 'book-483', 'book-484', 'book-485', 'book-486', 'book-487', 'book-488', 'book-489', 'book-490']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:57.185367Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:57.185728Z","level":"info","event":"Processing chunk 49/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:58:57.199330Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:02.194084Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:02.216045Z","level":"info","event":"Sending update request for chunk 50/100: ['book-491', 'book-492', 'book-493', 'book-494', 'book-495', 'book-496', 'book-497', 'book-498', 'book-499', 'book-500']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:02.216594Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:02.216999Z","level":"info","event":"Processing chunk 50/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:02.217436Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:07.206171Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:07.228598Z","level":"info","event":"Sending update request for chunk 51/100: ['book-501', 'book-502', 'book-503', 'book-504', 'book-505', 'book-506', 'book-507', 'book-508', 'book-509', 'book-510']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:07.229105Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:07.229617Z","level":"info","event":"Processing chunk 51/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:07.229943Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:12.218122Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:12.218580Z","level":"info","event":"Sending update request for chunk 52/100: ['book-511', 'book-512', 'book-513', 'book-514', 'book-515', 'book-516', 'book-517', 'book-518', 'book-519', 'book-520']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:12.218832Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:12.219039Z","level":"info","event":"Processing chunk 52/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:12.234946Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:17.227152Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:17.243281Z","level":"info","event":"Sending update request for chunk 53/100: ['book-521', 'book-522', 'book-523', 'book-524', 'book-525', 'book-526', 'book-527', 'book-528', 'book-529', 'book-530']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:17.243902Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:17.244364Z","level":"info","event":"Processing chunk 53/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:17.244791Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:22.237039Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:22.240108Z","level":"info","event":"Sending update request for chunk 54/100: ['book-531', 'book-532', 'book-533', 'book-534', 'book-535', 'book-536', 'book-537', 'book-538', 'book-539', 'book-540']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:22.240663Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:22.241784Z","level":"info","event":"Processing chunk 54/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:22.256267Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:27.243317Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:27.243704Z","level":"info","event":"Sending update request for chunk 55/100: ['book-541', 'book-542', 'book-543', 'book-544', 'book-545', 'book-546', 'book-547', 'book-548', 'book-549', 'book-550']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:27.243960Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:27.244182Z","level":"info","event":"Processing chunk 55/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:27.258261Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:32.253573Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:32.279556Z","level":"info","event":"Sending update request for chunk 56/100: ['book-551', 'book-552', 'book-553', 'book-554', 'book-555', 'book-556', 'book-557', 'book-558', 'book-559', 'book-560']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:32.280061Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:32.280387Z","level":"info","event":"Processing chunk 56/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:32.280798Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:37.272273Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:37.272794Z","level":"info","event":"Sending update request for chunk 57/100: ['book-561', 'book-562', 'book-563', 'book-564', 'book-565', 'book-566', 'book-567', 'book-568', 'book-569', 'book-570']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:37.273305Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:37.273898Z","level":"info","event":"Processing chunk 57/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:37.298442Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:42.463803Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:42.464273Z","level":"info","event":"Sending update request for chunk 58/100: ['book-571', 'book-572', 'book-573', 'book-574', 'book-575', 'book-576', 'book-577', 'book-578', 'book-579', 'book-580']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:42.464606Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:42.464944Z","level":"info","event":"Processing chunk 58/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:42.469259Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:47.520068Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:47.520441Z","level":"info","event":"Sending update request for chunk 59/100: ['book-581', 'book-582', 'book-583', 'book-584', 'book-585', 'book-586', 'book-587', 'book-588', 'book-589', 'book-590']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:47.520683Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:47.520911Z","level":"info","event":"Processing chunk 59/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:47.524216Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:52.540759Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:52.541275Z","level":"info","event":"Sending update request for chunk 60/100: ['book-591', 'book-592', 'book-593', 'book-594', 'book-595', 'book-596', 'book-597', 'book-598', 'book-599', 'book-600']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:52.541645Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:52.542029Z","level":"info","event":"Processing chunk 60/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:52.542353Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:57.529824Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:57.530420Z","level":"info","event":"Sending update request for chunk 61/100: ['book-601', 'book-602', 'book-603', 'book-604', 'book-605', 'book-606', 'book-607', 'book-608', 'book-609', 'book-610']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:57.530976Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:57.531435Z","level":"info","event":"Processing chunk 61/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T10:59:57.545885Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:02.539499Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:02.539960Z","level":"info","event":"Sending update request for chunk 62/100: ['book-611', 'book-612', 'book-613', 'book-614', 'book-615', 'book-616', 'book-617', 'book-618', 'book-619', 'book-620']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:02.540186Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:02.540409Z","level":"info","event":"Processing chunk 62/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:02.555798Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:07.550137Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:07.550457Z","level":"info","event":"Sending update request for chunk 63/100: ['book-621', 'book-622', 'book-623', 'book-624', 'book-625', 'book-626', 'book-627', 'book-628', 'book-629', 'book-630']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:07.550663Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:07.550827Z","level":"info","event":"Processing chunk 63/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:07.612113Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:12.558933Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:12.559313Z","level":"info","event":"Sending update request for chunk 64/100: ['book-631', 'book-632', 'book-633', 'book-634', 'book-635', 'book-636', 'book-637', 'book-638', 'book-639', 'book-640']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:12.559536Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:12.559755Z","level":"info","event":"Processing chunk 64/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:12.573528Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:17.570612Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:17.571129Z","level":"info","event":"Sending update request for chunk 65/100: ['book-641', 'book-642', 'book-643', 'book-644', 'book-645', 'book-646', 'book-647', 'book-648', 'book-649', 'book-650']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:17.571492Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:17.571805Z","level":"info","event":"Processing chunk 65/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:17.587240Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:22.689975Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:22.690622Z","level":"info","event":"Sending update request for chunk 66/100: ['book-651', 'book-652', 'book-653', 'book-654', 'book-655', 'book-656', 'book-657', 'book-658', 'book-659', 'book-660']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:22.691081Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:22.691582Z","level":"info","event":"Processing chunk 66/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:22.699562Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:27.701957Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:27.702414Z","level":"info","event":"Sending update request for chunk 67/100: ['book-661', 'book-662', 'book-663', 'book-664', 'book-665', 'book-666', 'book-667', 'book-668', 'book-669', 'book-670']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:27.702711Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:27.702998Z","level":"info","event":"Processing chunk 67/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:27.717670Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:32.715441Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:32.716031Z","level":"info","event":"Sending update request for chunk 68/100: ['book-671', 'book-672', 'book-673', 'book-674', 'book-675', 'book-676', 'book-677', 'book-678', 'book-679', 'book-680']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:32.716437Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:32.716813Z","level":"info","event":"Processing chunk 68/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:32.732863Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:37.724651Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:37.725013Z","level":"info","event":"Sending update request for chunk 69/100: ['book-681', 'book-682', 'book-683', 'book-684', 'book-685', 'book-686', 'book-687', 'book-688', 'book-689', 'book-690']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:37.725238Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:37.725464Z","level":"info","event":"Processing chunk 69/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:37.737802Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:42.732326Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:42.732691Z","level":"info","event":"Sending update request for chunk 70/100: ['book-691', 'book-692', 'book-693', 'book-694', 'book-695', 'book-696', 'book-697', 'book-698', 'book-699', 'book-700']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:42.732947Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:42.733194Z","level":"info","event":"Processing chunk 70/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:42.746918Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:47.741556Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:47.741988Z","level":"info","event":"Sending update request for chunk 71/100: ['book-701', 'book-702', 'book-703', 'book-704', 'book-705', 'book-706', 'book-707', 'book-708', 'book-709', 'book-710']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:47.742346Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:47.742572Z","level":"info","event":"Processing chunk 71/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:47.761707Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:52.751071Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:52.751591Z","level":"info","event":"Sending update request for chunk 72/100: ['book-711', 'book-712', 'book-713', 'book-714', 'book-715', 'book-716', 'book-717', 'book-718', 'book-719', 'book-720']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:52.751934Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:52.752378Z","level":"info","event":"Processing chunk 72/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:52.771361Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:57.833923Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:57.834572Z","level":"info","event":"Sending update request for chunk 73/100: ['book-721', 'book-722', 'book-723', 'book-724', 'book-725', 'book-726', 'book-727', 'book-728', 'book-729', 'book-730']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:57.835084Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:57.835466Z","level":"info","event":"Processing chunk 73/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:00:57.840332Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:04.557134Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:04.563184Z","level":"info","event":"Sending update request for chunk 74/100: ['book-731', 'book-732', 'book-733', 'book-734', 'book-735', 'book-736', 'book-737', 'book-738', 'book-739', 'book-740']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:04.564229Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:04.565747Z","level":"info","event":"Processing chunk 74/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:04.567488Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:08.060590Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:08.061551Z","level":"info","event":"Sending update request for chunk 75/100: ['book-741', 'book-742', 'book-743', 'book-744', 'book-745', 'book-746', 'book-747', 'book-748', 'book-749', 'book-750']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:08.066572Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:08.067494Z","level":"info","event":"Processing chunk 75/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:08.414387Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:13.091279Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:13.091919Z","level":"info","event":"Sending update request for chunk 76/100: ['book-751', 'book-752', 'book-753', 'book-754', 'book-755', 'book-756', 'book-757', 'book-758', 'book-759', 'book-760']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:13.094320Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:13.095633Z","level":"info","event":"Processing chunk 76/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:13.144162Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:18.117156Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:18.117695Z","level":"info","event":"Sending update request for chunk 77/100: ['book-761', 'book-762', 'book-763', 'book-764', 'book-765', 'book-766', 'book-767', 'book-768', 'book-769', 'book-770']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:18.118014Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:18.118312Z","level":"info","event":"Processing chunk 77/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:18.137779Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:23.128223Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:23.128585Z","level":"info","event":"Sending update request for chunk 78/100: ['book-771', 'book-772', 'book-773', 'book-774', 'book-775', 'book-776', 'book-777', 'book-778', 'book-779', 'book-780']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:23.128976Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:23.129246Z","level":"info","event":"Processing chunk 78/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:23.142830Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:28.129716Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:28.130228Z","level":"info","event":"Sending update request for chunk 79/100: ['book-781', 'book-782', 'book-783', 'book-784', 'book-785', 'book-786', 'book-787', 'book-788', 'book-789', 'book-790']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:28.130787Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:28.131518Z","level":"info","event":"Processing chunk 79/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:28.145714Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:33.139347Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:33.156711Z","level":"info","event":"Sending update request for chunk 80/100: ['book-791', 'book-792', 'book-793', 'book-794', 'book-795', 'book-796', 'book-797', 'book-798', 'book-799', 'book-800']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:33.157195Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:33.157661Z","level":"info","event":"Processing chunk 80/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:33.157977Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:38.215830Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:38.217104Z","level":"info","event":"Sending update request for chunk 81/100: ['book-801', 'book-802', 'book-803', 'book-804', 'book-805', 'book-806', 'book-807', 'book-808', 'book-809', 'book-810']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:38.217566Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:38.217850Z","level":"info","event":"Processing chunk 81/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:38.220866Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:43.225494Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:43.225867Z","level":"info","event":"Sending update request for chunk 82/100: ['book-811', 'book-812', 'book-813', 'book-814', 'book-815', 'book-816', 'book-817', 'book-818', 'book-819', 'book-820']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:43.226138Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:43.226430Z","level":"info","event":"Processing chunk 82/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:43.239700Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:48.233828Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:48.260492Z","level":"info","event":"Sending update request for chunk 83/100: ['book-821', 'book-822', 'book-823', 'book-824', 'book-825', 'book-826', 'book-827', 'book-828', 'book-829', 'book-830']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:48.260922Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:48.261249Z","level":"info","event":"Processing chunk 83/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:48.261522Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:53.243695Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:53.244076Z","level":"info","event":"Sending update request for chunk 84/100: ['book-831', 'book-832', 'book-833', 'book-834', 'book-835', 'book-836', 'book-837', 'book-838', 'book-839', 'book-840']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:53.244366Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:53.244617Z","level":"info","event":"Processing chunk 84/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:53.276234Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:58.244990Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:58.259051Z","level":"info","event":"Sending update request for chunk 85/100: ['book-841', 'book-842', 'book-843', 'book-844', 'book-845', 'book-846', 'book-847', 'book-848', 'book-849', 'book-850']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:58.259533Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:58.259955Z","level":"info","event":"Processing chunk 85/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:01:58.260289Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:03.253080Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:03.290481Z","level":"info","event":"Sending update request for chunk 86/100: ['book-851', 'book-852', 'book-853', 'book-854', 'book-855', 'book-856', 'book-857', 'book-858', 'book-859', 'book-860']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:03.291202Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:03.291784Z","level":"info","event":"Processing chunk 86/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:03.292185Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:08.271101Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:08.271477Z","level":"info","event":"Sending update request for chunk 87/100: ['book-861', 'book-862', 'book-863', 'book-864', 'book-865', 'book-866', 'book-867', 'book-868', 'book-869', 'book-870']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:08.271710Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:08.271911Z","level":"info","event":"Processing chunk 87/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:08.290246Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:13.426219Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:13.426864Z","level":"info","event":"Sending update request for chunk 88/100: ['book-871', 'book-872', 'book-873', 'book-874', 'book-875', 'book-876', 'book-877', 'book-878', 'book-879', 'book-880']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:13.427272Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:13.427695Z","level":"info","event":"Processing chunk 88/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:13.433750Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:18.583169Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:18.584164Z","level":"info","event":"Sending update request for chunk 89/100: ['book-881', 'book-882', 'book-883', 'book-884', 'book-885', 'book-886', 'book-887', 'book-888', 'book-889', 'book-890']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:18.584529Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:18.584891Z","level":"info","event":"Processing chunk 89/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:18.587749Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:23.591753Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:23.592516Z","level":"info","event":"Sending update request for chunk 90/100: ['book-891', 'book-892', 'book-893', 'book-894', 'book-895', 'book-896', 'book-897', 'book-898', 'book-899', 'book-900']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:23.593034Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:23.593373Z","level":"info","event":"Processing chunk 90/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:23.611569Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:28.593956Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:28.640420Z","level":"info","event":"Sending update request for chunk 91/100: ['book-901', 'book-902', 'book-903', 'book-904', 'book-905', 'book-906', 'book-907', 'book-908', 'book-909', 'book-910']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:28.640746Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:28.640961Z","level":"info","event":"Processing chunk 91/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:28.641157Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:33.601958Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:33.602317Z","level":"info","event":"Sending update request for chunk 92/100: ['book-911', 'book-912', 'book-913', 'book-914', 'book-915', 'book-916', 'book-917', 'book-918', 'book-919', 'book-920']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:33.602552Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:33.602757Z","level":"info","event":"Processing chunk 92/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:33.616000Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:38.615841Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:38.616552Z","level":"info","event":"Sending update request for chunk 93/100: ['book-921', 'book-922', 'book-923', 'book-924', 'book-925', 'book-926', 'book-927', 'book-928', 'book-929', 'book-930']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:38.617343Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:38.617757Z","level":"info","event":"Processing chunk 93/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:38.636553Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:43.626714Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:43.641733Z","level":"info","event":"Sending update request for chunk 94/100: ['book-931', 'book-932', 'book-933', 'book-934', 'book-935', 'book-936', 'book-937', 'book-938', 'book-939', 'book-940']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:43.642077Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:43.642589Z","level":"info","event":"Processing chunk 94/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:43.643070Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:48.636797Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:48.637659Z","level":"info","event":"Sending update request for chunk 95/100: ['book-941', 'book-942', 'book-943', 'book-944', 'book-945', 'book-946', 'book-947', 'book-948', 'book-949', 'book-950']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:48.638180Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:48.638625Z","level":"info","event":"Processing chunk 95/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:48.657672Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:54.172325Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:54.173829Z","level":"info","event":"Sending update request for chunk 96/100: ['book-951', 'book-952', 'book-953', 'book-954', 'book-955', 'book-956', 'book-957', 'book-958', 'book-959', 'book-960']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:54.174480Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:54.175078Z","level":"info","event":"Processing chunk 96/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:54.183253Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:59.252837Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:59.253329Z","level":"info","event":"Sending update request for chunk 97/100: ['book-961', 'book-962', 'book-963', 'book-964', 'book-965', 'book-966', 'book-967', 'book-968', 'book-969', 'book-970']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:59.253621Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:59.253883Z","level":"info","event":"Processing chunk 97/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:02:59.257503Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:04.273530Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:04.274036Z","level":"info","event":"Sending update request for chunk 98/100: ['book-971', 'book-972', 'book-973', 'book-974', 'book-975', 'book-976', 'book-977', 'book-978', 'book-979', 'book-980']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:04.274316Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:04.274562Z","level":"info","event":"Processing chunk 98/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:04.274868Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:09.271695Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:09.272208Z","level":"info","event":"Sending update request for chunk 99/100: ['book-981', 'book-982', 'book-983', 'book-984', 'book-985', 'book-986', 'book-987', 'book-988', 'book-989', 'book-990']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:09.272529Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:09.272791Z","level":"info","event":"Processing chunk 99/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:09.287775Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:14.280759Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:14.281418Z","level":"info","event":"Sending update request for chunk 100/100: ['book-991', 'book-992', 'book-993', 'book-994', 'book-995', 'book-996', 'book-997', 'book-998', 'book-999', 'book-1000']","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:14.282030Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:14.282780Z","level":"info","event":"Processing chunk 100/100 with 10 items","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:14.306198Z","level":"info","event":"Chunk progress: 0/10 read (0.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:19.290238Z","level":"info","event":"Chunk progress: 10/10 read (100.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:19.305826Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:19.306135Z","level":"info","event":"✅ All chunks processed successfully.","logger":"task.stdout"}
+{"timestamp":"2025-10-28T11:03:19.306782Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
